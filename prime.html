@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head> </head>
+	<body>
+		<h2>소수 판별</h2>
+		<p>소수를 판별하는 프로그램을 만들어봅시다.</p>
+		<!-- <script>
+			const userNum = Number(prompt('숫자를 입력해주세요.'));
+			let count = 0;
+			for (let i = 1; i <= userNum; i++) {
+				if (userNum % i === 0) {
+					count += 1;
+				}
+			}
+			if (count <= 2) {
+				document.write(`${userNum}은 소수입니다.`);
+			}
+			if (count > 2) {
+				document.write(`${userNum}은 소수가 아닙니다.`);
+			}
+		</script> -->
+
+		<script>
+			const num = Number(prompt('숫자를 입력하세요.'));
+			let isPrime = true;
+			for (let i = 2; i < num; i++) {
+				if (num % i === 0) {
+					isPrime = false;
+					break;
+				}
+			}
+			if (isPrime) {
+				document.write(`${num}은 소수예요.`);
+			} else {
+				document.write(`${num}은 소수가 아니예요.`);
+			}
+		</script>
+	</body>
+</html>
