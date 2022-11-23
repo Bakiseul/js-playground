@@ -9,19 +9,12 @@
 	<body>
 		<h1>구구단 구현하기</h1>
 		<script>
-			const num4 = 4;
-			const num5 = 5;
+			let sign = Number(prompt('몇 단을 출력할까요? (숫자를 입력하세요.)'));
 
-			console.log('4단');
+			console.log(`${sign}단`);
 			for (let i = 1; i < 10; i++) {
-				let result = num4 * i;
-				console.log(`4 * ${i} = ${result}`);
-			}
-
-			console.log('5단');
-			for (let i = 1; i < 10; i++) {
-				let result = num5 * i;
-				console.log(`5 * ${i} = ${result}`);
+				let result = sign * i;
+				console.log(`${sign} * ${i} = ${result}`);
 			}
 		</script>
 	</body>
