@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>gugudan8</title>
+	</head>
+	<body>
+		<h1>구구단 구현하기</h1>
+		출력할 단: <input type="text" id="num" />
+		<button onclick="display()">확인</button>
+		<script>
+			function display() {
+				let strN = document.getElementById('num').value;
+				let num = Number(strN);
+				if (num < 2 || num > 9) {
+					document.write('2 이상, 9 이하의 숫자를 입력해 주세요.');
+				} else {
+					document.write(`<h2>${num}단</h2>`);
+					for (let i = 1; i < 10; i++) {
+						let result = num * i;
+						document.write(`${num} * ${i} = ${result}<br>`);
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
